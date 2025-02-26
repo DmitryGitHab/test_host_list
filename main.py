@@ -33,7 +33,7 @@ class Server(BaseModel):
     # @__pydantic_validator__('ip')
     # def validate_ip(cls, v):
     #     import re
-    #     if not re.match(r'^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$', v):
+    #     if not re.match(r'^((25[0-5]|(2[0-4]|1\d|[1-9]|)\d)\.?\b){4}$', v):
     #         raise ValueError('Invalid IP address')
     #     return v
 
